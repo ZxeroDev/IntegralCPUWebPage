@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Integrales CPU</title>
+
+    <link rel="stylesheet" href="css/global.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <nav class="navbar">
+      <div class="logo">IntegralesCPU</div>
+
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+
+        <li><a href="#proyecto">Proyecto</a></li>
+
+        <li><a href="#caracteristicas">Características</a></li>
+
+        <li><a href="#descargas">Descargas</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>ANÁLISIS Y OPTIMIZACIÓN DEL CPU MEDIANTE INTEGRALES</h1>
+
+        <p>
+          Proyecto desarrollado en Python para monitorear el uso del CPU en
+          tiempo real utilizando integración numérica, gráficas dinámicas y la
+          regla del trapecio.
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            href="./files/analisis_cpu_integrales.zip"
+            download="analisis_cpu_integrales.zip"
+            class="btn-primary"
+          >
+            Descargar Proyecto
+          </a>
+
+          <a
+            href="./files/extras.zip"
+            download="extras.zip"
+            class="btn-secondary"
+          >
+            Descargar Extras
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-dashboard">
+        <div class="dashboard">
+          <div class="dashboard-top">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+
+          <div class="dashboard-body">
+            <div class="stat-box">
+              <h3>CPU ACTUAL</h3>
+
+              <span id="cpuValue">0.0%</span>
+            </div>
+
+            <div class="stat-box">
+              <h3>INTEGRAL</h3>
+
+              <span id="integralValue">23.4</span>
+            </div>
+
+            <div class="graph-area">
+              <div class="graph-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="proyecto">
+      <div class="title">
+        <h2>Sobre el Proyecto</h2>
+
+        <p>
+          El sistema obtiene datos reales del computador y calcula la carga
+          acumulada del procesador utilizando integrales y el método del
+          trapecio.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Monitoreo</h3>
+
+          <p>
+            Obtención del porcentaje del CPU segundo por segundo mediante la
+            librería psutil.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Integración Numérica</h3>
+
+          <p>Cálculo del área bajo la curva utilizando numpy.trapezoid().</p>
+        </div>
+
+        <div class="card">
+          <h3>Visualización</h3>
+
+          <p>
+            Dashboard moderno con gráficas dinámicas y métricas del sistema.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="caracteristicas">
+      <div class="title">
+        <h2>Características</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Python</h3>
+
+          <p>Desarrollo completo utilizando Python 3.</p>
+        </div>
+
+        <div class="feature">
+          <h3>NumPy</h3>
+
+          <p>Implementación de cálculos matemáticos e integración numérica.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Matplotlib</h3>
+
+          <p>Generación de gráficas del comportamiento del CPU.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Psutil</h3>
+
+          <p>Obtención de datos reales del sistema operativo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="downloads" id="descargas">
+      <div class="download-box">
+        <h2>Descargas</h2>
+
+        <p>Descarga el proyecto completo y los archivos adicionales.</p>
+
+        <div class="download-buttons">
+          <a
+            href="./files/analisis_cpu_integrales.zip"
+            download="analisis_cpu_integrales.zip"
+            class="btn-primary"
+          >
+            Descargar Proyecto
+          </a>
+
+          <a
+            href="./files/extras.zip"
+            download="extras.zip"
+            class="btn-secondary"
+          >
+            Descargar ZIP
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="team-section" id="integrantes">
+      <div class="title">
+        <h2>Integrantes del Proyecto</h2>
+        <p>
+          Equipo encargado del desarrollo, análisis matemático, programación y
+          documentación del sistema de monitoreo y optimización de CPU mediante
+          integrales.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Alan González Merlano</h3>
+          <span>Desarrollador Principal</span>
+          <p>
+            Encargado de la lógica matemática, integración numérica y desarrollo
+            principal del sistema.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Andrés Felipe Mojarrango Silgado</h3>
+          <span>Documentación</span>
+          <p>
+            Responsable del análisis teórico, redacción y estructura del
+            proyecto.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Dylan Andrés Mercado Mercado</h3>
+          <span>Visualización y Testing</span>
+          <p>
+            Encargado de pruebas, validación del sistema y análisis visual de
+            resultados.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Abisaí Villadiego Leguia</h3>
+          <span>Investigación</span>
+          <p>
+            Apoyo en investigación, recopilación de información y validación
+            conceptual.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-glow"></div>
+          <h3>Jorge Alejandro Castillo Paternina</h3>
+          <span>Soporte del Proyecto</span>
+          <p>
+            Colaboración en organización, ideas de implementación y estructura
+            general del sistema.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="contact-container">
+        <div class="title">
+          <h2>Contacto</h2>
+          <p>
+            Para información adicional, documentación técnica o soporte
+            relacionado con el proyecto.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <div class="contact-item">
+            <h3>Correo</h3>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=integralescpu.project@gmail.com"
+              target="_blank"
+              class="contact-link"
+            >
+              integralescpu.project@gmail.com
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <h3>Número de Contacto</h3>
+
+            <a
+              href="https://wa.me/573216419481"
+              target="_blank"
+              class="contact-link"
+            >
+              +57 321 6419481
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <h3>Ubicación</h3>
+            <p>Sincelejo, Sucre - Colombia</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Proyecto</h3>
+            <p>Análisis y Optimización del CPU mediante Integrales</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Proyecto Integrales CPU - Ingeniería de Sistemas</p>
+    </footer>
+
+    <script src="js/funcionalidad.js"></script>
+  </body>
+</html>
